@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #333;
+        color: #fff;
+      }
+
+      .container {
+        width: 80%;
+        max-width: 1200px;
+        padding: 20px;
+        background-color: #444;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: bisque;
+      }
+
+      p {
+        color: aquamarine;
+      }
+
+      ul,
+      li {
+        color: green;
+      }
+
+      .contact-form h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-align: center;
+      }
+      .contact-form label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      .contact-form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .contact-form button:hover {
+        background-color: #218838;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          font-size: 14px;
+          padding: 10px;
+        }
+
+        .container {
+          width: 90%;
+        }
+
+        h1,
+        h2,
+        h3 {
+          font-size: 18px;
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
+          font-size: 14px;
+        }
+      }
+    </style>
+    <title>Personal Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Who am I?</h1>
+      <p>Hi my name is Rahim Rexha, I'm 28 years old.</p>
+      <p>
+        At the moment I'm learning frontend and backend development. But I also
+        like to: travel, read, train, play sports, watch movies etc.
+      </p>
+      <ul>
+        <h2>My technical skills at the moment are</h2>
+        <li><i class="fab fa-html5"></i> HTML</li>
+        <li><i class="fab fa-css3-alt"></i> CSS</li>
+        <li><i class="fab fa-js"></i> JavaScript</li>
+        <li><i class="fab fa-php"></i> PHP</li>
+        <li>
+          <i class="fab fa-laravel"></i> And in a few weeks I'll start with
+          Laravel
+        </li>
+      </ul>
+
+      <h3>My Projects:</h3>
+      <ul>
+        <li><a href="#">apostrof.studio</a></li>
+        <li><a href="#">tia-drinks</a></li>
+        <li><a href="#">PDF-Invoice-Design</a></li>
+        <li><a href="#">html.portfolio</a></li>
+      </ul>
+      <form class="contact-form" action="submit_form.php" method="POST">
+        <h2>Contact Us</h2>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </body>
+</html>
